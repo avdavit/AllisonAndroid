@@ -4,11 +4,9 @@
     <color name="colorPrimaryDark">#048FC9</color>
     <color name="colorAccent">#F7D314</color>
 
-
     <color name="bg_blue">#03BCE9</color>
     <color name="bg_yellow">#F7BF0E</color>
-
-
+    <color name="txt_black">#4A4A4A</color>
 
 
     <!-- Commons -->

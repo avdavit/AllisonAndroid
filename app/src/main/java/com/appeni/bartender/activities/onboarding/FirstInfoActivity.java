@@ -7,7 +7,6 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 
-import com.appeni.bartender.MainActivity;
 import com.appeni.bartender.R;
 import com.appeni.bartender.onBoarding.PaperOnboardingFragment;
 import com.appeni.bartender.onBoarding.PaperOnboardingPage;
@@ -34,7 +33,7 @@ public class FirstInfoActivity extends AppCompatActivity {
         onBoardingFragment.setOnRightOutListener(new PaperOnboardingOnRightOutListener() {
             @Override
             public void onRightOut() {
-                Intent intent= new Intent(FirstInfoActivity.this, MainActivity.class);
+                Intent intent= new Intent(FirstInfoActivity.this, RegisterActivity.class);
                 startActivity(intent);
             }
         });

@@ -31,6 +31,13 @@
     <style name="OnBoardingTheme" parent="Theme.AppCompat.NoActionBar">
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowFullscreen">true</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:textColorHint">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+
+        <item name="colorControlNormal">#6b1fc6f4</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+
     </style>
 
 
