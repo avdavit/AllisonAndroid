@@ -9,9 +9,9 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.appeni.bartender.MainActivity;
 import com.appeni.bartender.R;
-import com.ramotion.paperonboarding.PaperOnboardingFragment;
-import com.ramotion.paperonboarding.PaperOnboardingPage;
-import com.ramotion.paperonboarding.listeners.PaperOnboardingOnRightOutListener;
+import com.appeni.bartender.onBoarding.PaperOnboardingFragment;
+import com.appeni.bartender.onBoarding.PaperOnboardingPage;
+import com.appeni.bartender.onBoarding.listeners.PaperOnboardingOnRightOutListener;
 
 import java.util.ArrayList;
 
@@ -42,12 +42,12 @@ public class FirstInfoActivity extends AppCompatActivity {
 
     private ArrayList<PaperOnboardingPage> getDataForOnboarding() {
         // prepare data
-        PaperOnboardingPage scr1 = new PaperOnboardingPage("Hotels", "All hotels and hostels are sorted by hospitality rating",
-                Color.parseColor("#678FB4"), R.drawable.img_login, R.drawable.img_login);
-        PaperOnboardingPage scr2 = new PaperOnboardingPage("Banks", "We carefully verify all banks before add them into the app",
-                Color.parseColor("#65B0B4"), R.drawable.img_login, R.drawable.img_login);
-        PaperOnboardingPage scr3 = new PaperOnboardingPage("Stores", "All local stores are categorized for your convenience",
-                Color.parseColor("#9B90BC"), R.drawable.img_login, R.drawable.img_login);
+        PaperOnboardingPage scr1 = new PaperOnboardingPage("BarDemand Presents...", "Mobile Bartendering!",
+                Color.parseColor("#03BCE9"), R.drawable.img_onboarding_1, R.drawable.ic_plus);
+        PaperOnboardingPage scr2 = new PaperOnboardingPage("On-Demand bartender", "We bring the bar to you",
+                Color.parseColor("#F7BF0E"), R.drawable.img_onboarding_2, R.drawable.ic_plus);
+        PaperOnboardingPage scr3 = new PaperOnboardingPage("Elevate your Event & Provide an experience", "with BarDemand",
+                Color.parseColor("#03BCE9"), R.drawable.img_onboarding_3, R.drawable.ic_plus);
 
         ArrayList<PaperOnboardingPage> elements = new ArrayList<>();
         elements.add(scr1);

@@ -39,5 +39,4 @@ dependencies {
 
     compile 'com.daimajia.androidanimations:library:2.3@aar'
     compile 'com.daimajia.easing:library:2.0@aar'
-    compile 'com.ramotion.paperonboarding:paper-onboarding:1.1.1'
 }
