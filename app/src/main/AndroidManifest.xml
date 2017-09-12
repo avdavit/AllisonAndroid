@@ -29,8 +29,11 @@
             android:theme="@style/OnBoardingTheme" />
         <activity
             android:name=".activities.onboarding.RegisterActivity"
-            android:windowSoftInputMode="stateHidden"
-            android:theme="@style/OnBoardingTheme"></activity>
+            android:theme="@style/OnBoardingTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activities.onboarding.PhoneVerificationActivity"
+            android:theme="@style/NoActionBarCustom"></activity>
     </application>
 
 </manifest>

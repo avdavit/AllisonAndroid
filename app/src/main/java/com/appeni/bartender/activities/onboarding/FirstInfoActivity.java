@@ -1,6 +1,5 @@
 package com.appeni.bartender.activities.onboarding;
 
-import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
@@ -8,6 +7,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 
 import com.appeni.bartender.R;
+import com.appeni.bartender.controllers.ViewController;
 import com.appeni.bartender.onBoarding.PaperOnboardingFragment;
 import com.appeni.bartender.onBoarding.PaperOnboardingPage;
 import com.appeni.bartender.onBoarding.listeners.PaperOnboardingOnRightOutListener;
@@ -33,8 +33,7 @@ public class FirstInfoActivity extends AppCompatActivity {
         onBoardingFragment.setOnRightOutListener(new PaperOnboardingOnRightOutListener() {
             @Override
             public void onRightOut() {
-                Intent intent= new Intent(FirstInfoActivity.this, RegisterActivity.class);
-                startActivity(intent);
+                ViewController.getViewController().openRegisterActivity(FirstInfoActivity.this);
             }
         });
     }

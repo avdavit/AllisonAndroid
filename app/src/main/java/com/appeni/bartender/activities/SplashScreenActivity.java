@@ -5,7 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import com.appeni.bartender.MainActivity;
-import com.appeni.bartender.activities.onboarding.FirstInfoActivity;
+import com.appeni.bartender.activities.onboarding.PhoneVerificationActivity;
 import com.appeni.bartender.utils.SharedPreference;
 
 public class SplashScreenActivity extends Activity {
@@ -21,7 +21,8 @@ public class SplashScreenActivity extends Activity {
             intent = new Intent(getApplicationContext(), MainActivity.class);
 //            intent = new Intent(getApplicationContext(), TestActivity.class);
         } else {
-            intent = new Intent(this, FirstInfoActivity.class);
+//            intent = new Intent(this, FirstInfoActivity.class);
+            intent = new Intent(getApplicationContext(), PhoneVerificationActivity.class);
         }
 
         startActivity(intent);
